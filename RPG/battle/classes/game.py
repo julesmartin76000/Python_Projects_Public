@@ -72,3 +72,7 @@ class Person:
         for spell in self.magic:
             print (str(i) + ":", spell["name"], "(cost: ", str(spell["mp"]) + ")")
             i += 1
+
+
+    def generate_damage(self):
+        return random.randrange(self.atkl, self.atkh)
